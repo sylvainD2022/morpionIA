@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Morpion</title>
+</head>
+<body>
+    <h1>Le jeu du morpion</h1>
+    <h2 id="score">Croix 0 - 0 Ronds</h2>
+    <button class="plateau" id="case1" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case2" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case3" value=null onclick="jouer(this)">&nbsp;</button>
+    <br>
+    <button class="plateau" id="case4" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case5" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case6" value=null onclick="jouer(this)">&nbsp;</button>
+    <br>
+    <button class="plateau" id="case7" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case8" value=null onclick="jouer(this)">&nbsp;</button><button class="plateau" id="case9" value=null onclick="jouer(this)">&nbsp;</button>
+
+    <p id="resultat">Tour des Croix</p>
+    <button id="refresh" onclick="refresh()">Nouveau Match</button>
+
+    <script src="morpionAvecAI.js"></script>
+</body>
+</html>
